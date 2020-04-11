@@ -1,40 +1,33 @@
-# SelectAutocompleteApp
+# MatSelectAutocomplete
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+MatSelectAutocomplete is Angular based material component with feature of multi-options selection and autocomplete features
 
-## Development server
+[Demo] (https://stackblitz.com/edit/mat-select-autocomplete)
+[Documentation] (https://medium.com/@cryptoipl/angular-material-multi-select-with-autocomplete-113065d58dab)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+<ul>
+  <li> Autocomplete in mat-select : Search the options based on display value</li>
+  <li> Unselect / Select All at single click</li>
+  <li>  Ability to select / unselect partial list which is being filtered</li>
+</ul>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
+Install MatSelectAutocomplete with npm:
+npm install select-autocomplete --save
 
-## Build
+## Dependency
+Angular Material. Add it using [GettingStartedWithAngularMaterial].
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Demo
-https://stackblitz.com/edit/mat-select-autocomplete
-## Documentation
-https://medium.com/@cryptoipl/angular-material-multi-select-with-autocomplete-113065d58dab
+## Usage
+Install select-autocomplete using [npm]
+In AppModule, import { SelectAutocompleteModule } from ‘select-autocomplete’;
+Add it to your AppModule import list
+Add material theme to your styles.scss as @import “~@angular/material/prebuilt-themes/indigo-pink.css”;
+Add Material icons fonts to index.html as (<link href=”https://fonts.googleapis.com/icon?family=Material+Icons" rel=”stylesheet”>)
+Now use <mat-select-autocomplete> with configurations specified in document
 
 
-## To build package
-npm run package
-
-## To publish the package
-npm login
-npm publish ./dist/select-autocomplete/mat-select-autocomplete-1.2.1.tgz
+## Keywords
+[angular], [angular2+], [angular2+], [angular6], [javascript], [material], [mat-select], [mat-select-autocomplete], [autocomplete]
