@@ -85,6 +85,8 @@ export class MultiselectComponent implements OnChanges {
   @Input()
   showErrorMsg = false;
   @Input()
+  otherMsg = 'other';
+  @Input()
   selectedOptions;
   @Input()
   multiple = true;
@@ -177,7 +179,7 @@ export class MultiselectComponent implements OnChanges {
           }
           this.displayString = this.displayString.slice(0, -1);
           if (this.selectedValue.length > 1) {
-            this.displayString += ` (+${this.selectedValue.length - this.labelCount} others)`;
+            this.displayString += ` (+${this.selectedValue.length - this.labelCount} ${this.otherMsg})`;
           }
         }
       } else {
